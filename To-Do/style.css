@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:linear-gradient(120deg, #ffaa80, #ffddcc);
+    font-family: "Montserrat", sans-serif;
+    color:white;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.75rem;
+    background: #ff8c66;
+    border: 6px solid white;
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding: 1.3rem;
+    font-size: 1.5rem;
+    border: none;
+    background: white;
+}
+
+form button {
+    color: #ff5500;
+    background: white;
+    cursor: pointer;
+}
+
+form button:hover{
+    background: #ff5500;
+    color: white;
+}
+
+.to-do-cont {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.to-do-list {
+    min-width: 40%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: white;
+    font-size: 1.5rem;
+    color: gray;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.to-do-item {
+    padding: 0rem, 0.5rem;
+}
+
+.delete-button, .completed-button {
+    background:  #ff5500;
+    color: white;
+    padding: 0.6rem;
+    border: none;
+}
+
+.completed-button {
+    border-radius: 100px;
+    background: #66cc00;
+    margin-right: 8px;
+}
+
+.delete-button {
+    border-radius: 100px;
+}
+
+.fa-trash, .fa-check-circle{
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.45;
+}
